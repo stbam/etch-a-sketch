@@ -1,0 +1,12 @@
+grid-item {
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+    color: blue;
+  }
+
+.grid-container{
+    display: flex;
+    width: 320px;
+    flex-direction: column;
+}
