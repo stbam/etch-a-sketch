@@ -5,7 +5,7 @@ const container = document.getElementById("grids");
 
 for (let i=0;i<256;i++){
         const node=document.createElement("grid-item");
-        node.innerHTML=i;
+       // node.innerHTML=i;
         container.appendChild(node);
         node.addEventListener("mouseenter",(event)=>{
             event.target.style.backgroundColor = "purple";
@@ -27,7 +27,7 @@ function buttonFunction(){
         for (let i=0;i<length;i++){
             for(let j=0;j<height;j++){
                 const node=document.createElement("grid-item");
-                node.innerHTML="x";
+              //  node.innerHTML="x";
                 container.appendChild(node);
                 node.addEventListener("mouseenter",(event)=>{
                     event.target.style.backgroundColor = "purple";

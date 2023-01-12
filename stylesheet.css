@@ -3,10 +3,15 @@ grid-item {
     height: 20px;
     display:inline-block;
     color: blue;
+    border:ridge black .5px  ; /*border and .grid-container's extra 
+    few pixels in width section allow all boxes to fit in x by x square with no overflow*/
+
+
   }
 
 .grid-container{
     display: flex;
-    width: 320px;
+    width: 336px;
     flex-direction: column;
+    
 }
