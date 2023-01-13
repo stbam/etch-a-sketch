@@ -24,12 +24,12 @@ function buttonFunction(){
         container.removeChild(container.firstChild);
       }/*removes old container*/
        
-      
-      dim_count= (336)/(length*height);//wrong
+      let x=length;
+      dim_count= (336)/( (2**x));//wrong
     
- 
+
        
-  
+  console.log(Math.pow(2,0))
 
      // grid_cont.style.width= `${length*20}px`;  
       
