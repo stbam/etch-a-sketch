@@ -13,10 +13,6 @@ for (let i=0;i<256;i++){
         });
 }
 
-
-
-
-
 function buttonFunction(){
    let length= prompt("Enter new length of sketchbox");
     let height= length;  //prompt("Enter the new height of sketchbox")
