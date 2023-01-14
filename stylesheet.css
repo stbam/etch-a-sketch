@@ -2,21 +2,20 @@ grid-item {
     width: 20px;
     height: 20px;
     display:inline-block;
+    background-color: aliceblue;
     outline:inset black .5px  ; /*border and .grid-container's extra border:ridge black .5px  ; //point of error?!!!!!
     few pixels in width section allow all boxes to fit in x by x square with no overflow*/
 margin: 0;
-
   }
-
+  .title{
+    text-align: center;
+  }
 #grids{
   display: flex;/*the two properties make the boxes fit into the grids dimension */
   flex-wrap: wrap;
   
   /*flex:auto; ruins 16x16  grid */
   flex-direction: row;
-  
-
-
   width: 320px;
   height: 320px;; /* 336px auto removes the spaces in new  */ 
 }
@@ -24,5 +23,37 @@ margin: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+}
+h2{
+  text-align: center;
+}
+.bottom{
+  margin-top: 10px;
+  border: solid black;
+
+}
+html{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-end;
+  background-color: aquamarine;
+}
+.frame{
+  display: flex;
+  align-items: flex-end;
+
+
+  width: 550px;
+  padding: 30px;
+  border-radius: 2rem;
+  background-color: brown;
+}
+#button{
+  width: 90px;
+  height: 90px;
+  margin: 10px;
   
+  background-color: white;
+  border-radius: 50px;*/
 }
