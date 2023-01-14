@@ -2,8 +2,7 @@ grid-item {
     width: 20px;
     height: 20px;
     display:inline-block;
-    color: blue;
-    border:ridge black .5px  ; /*border and .grid-container's extra 
+    outline:inset black .5px  ; /*border and .grid-container's extra border:ridge black .5px  ; //point of error?!!!!!
     few pixels in width section allow all boxes to fit in x by x square with no overflow*/
 margin: 0;
 
@@ -12,8 +11,18 @@ margin: 0;
 #grids{
   display: flex;/*the two properties make the boxes fit into the grids dimension */
   flex-wrap: wrap;
-  width: 336px;
-  height: 336px;  
+  
+  /*flex:auto; ruins 16x16  grid */
+  flex-direction: row;
+  
 
-   
+
+  width: 320px;
+  height: 320px;; /* 336px auto removes the spaces in new  */ 
+}
+.grid-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
 }
